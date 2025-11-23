@@ -1,0 +1,120 @@
+/* Custom styles for Bootstrap dark theme */
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #dc3545 !important;
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  background-color: #dc3545 !important;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.team-member-card {
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: scale(1.02);
+}
+
+.team-icon {
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover .team-icon {
+  transform: scale(1.1);
+}
+
+.team-member-card .bg-dark {
+  transition: background-color 0.3s ease;
+}
+
+.team-member-card:hover .bg-dark {
+  background-color: #4b5563 !important;
+}
+
+.support-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.support-card:hover {
+  border-color: #dc3545 !important;
+}
+
+.support-icon {
+  transition: transform 0.3s ease;
+}
+
+.support-card:hover .support-icon {
+  transform: scale(1.25);
+}
+
+.contact-card {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-card:hover {
+  background-color: #dc3545 !important;
+}
+
+.contact-card:hover a {
+  color: #ffffff !important;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Custom border color for purple */
+.border-purple {
+  border-color: #a855f7 !important;
+}
+
+/* Ensure text colors work with Bootstrap */
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.bg-secondary {
+  background-color: #1f2937 !important;
+}
+
+.bg-dark {
+  background-color: #111827 !important;
+}
+
+.text-light {
+  color: #d1d5db !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 2.5rem;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .display-5 {
+    font-size: 1.75rem;
+  }
+}
