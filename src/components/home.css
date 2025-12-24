@@ -56,6 +56,10 @@
   transition: transform 0.3s ease;
 }
 
+.support-icon-img {
+  height: 200px;
+}
+
 .support-card:hover .support-icon {
   transform: scale(1.25);
 }

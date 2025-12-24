@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-90 sticky-top shadow-lg" style={{ zIndex: 1050 }}>
       <div className="container-fluid">
-        <div className="navbar-brand fs-3 fw-bold text-danger">🎵 MASTERMIND SOUNDS</div>
+        <div className="navbar-brand fs-3 fw-bold text-danger">🎵 JAGUAR SOUNDS</div>
         
         {/* Mobile Menu Button */}
         <button 

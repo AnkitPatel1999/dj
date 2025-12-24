@@ -35,7 +35,7 @@ export default function Hero() {
 
         {/* Content Overlay */}
         <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center" style={{ zIndex: 10 }}>
-          <h1 className="display-1 fw-bold mb-4 text-white" style={{ textShadow: '0 4px 6px rgba(0,0,0,0.8)' }}>MASTERMIND SOUNDS</h1>
+          <h1 className="display-1 fw-bold mb-4 text-white" style={{ textShadow: '0 4px 6px rgba(0,0,0,0.8)' }}>JAGUAR SOUNDS</h1>
           <p className="fs-3 mb-4 text-white" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>તમામ ઈવેન્ટ માટે શક્તિશાળી DJ</p>
           <p className="fs-5 mb-5 text-white" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)', maxWidth: '42rem' }}>લગ્ન • ડાંડિયા • વરઘોડો • જન્મદિવસ • રિસેપશન અને વધુ</p>
           
