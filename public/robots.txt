@@ -4,4 +4,4 @@ Allow: /
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://jegsounds.com/sitemap.xml
+Sitemap: https://jaguarsound.vercel.app/sitemap.xml
