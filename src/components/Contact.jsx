@@ -1,6 +1,6 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin } from 'lucide-react';
-import { contactInfo } from './data';
+import { Phone, MessageCircle, MapPin, Instagram, Youtube } from 'lucide-react';
+import { contactInfo, socialLinks } from './data';
 
 export default function Contact() {
   return (
@@ -33,9 +33,33 @@ export default function Contact() {
         <div className="bg-danger bg-gradient p-5 rounded text-center">
           <h3 className="display-5 fw-bold mb-3">સંપૂર્ણ DJ અનુભવ માટે તૈયાર છો?</h3>
           <p className="mb-4 fs-5">અજવાળી ઈવેન્ટ એન્ટરટેઇનમેન્ટ માટે આજ જ આપણેને સંપર્ક કરો</p>
-          <a href={`https://wa.me/${contactInfo.whatsapp}`} target="_blank" rel="noopener noreferrer" className="btn btn-light btn-lg text-danger fw-bold">
+          <a href={`https://wa.me/${contactInfo.whatsapp}`} target="_blank" rel="noopener noreferrer" className="btn btn-light btn-lg text-danger fw-bold mb-3">
             🎵 હવે તમારો DJ બુક કરો
           </a>
+          
+          {/* Social Media Links */}
+          <div className="mt-4 d-flex justify-content-center gap-4">
+            <a 
+              href={socialLinks.instagram} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white text-decoration-none d-flex align-items-center gap-2"
+              aria-label="Follow us on Instagram"
+            >
+              <Instagram size={28} />
+              <span className="fw-bold">Jaguar_sound_official</span>
+            </a>
+            <a 
+              href={socialLinks.youtube} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white text-decoration-none d-flex align-items-center gap-2"
+              aria-label="Subscribe to our YouTube channel"
+            >
+              <Youtube size={28} />
+              <span className="fw-bold">YouTube</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

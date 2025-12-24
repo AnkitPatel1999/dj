@@ -60,3 +60,10 @@ export const contactInfo = {
   location: 'પીપલોદ - દેવગઢ બારિયા, દાહોદ'
 };
 
+export const socialLinks = {
+  instagram: 'https://www.instagram.com/jaguar_sound_official/',
+  youtube: 'https://www.youtube.com/@jaguar_sounds_official',
+  instagramDreamchaser: 'https://www.instagram.com/dreamchaser.ride/',
+  instagramMastermind: 'https://www.instagram.com/mastermind_pravin_patel/'
+};
+

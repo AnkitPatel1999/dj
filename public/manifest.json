@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Jaguar Sound",
+  "name": "Jaguar Sound - Professional DJ Services",
+  "description": "Professional DJ services for weddings, Garba, Dandiya, Barat, birthdays, and special events in Piplod, Devgadh Baria, Dahod, Gujarat.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#dc3545",
+  "background_color": "#212529",
+  "orientation": "portrait-primary"
 }
