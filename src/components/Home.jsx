@@ -8,6 +8,7 @@ import Team from './Team';
 import Support from './Support';
 import Contact from './Contact';
 import Footer from './Footer';
+import GalleryPage from './gallery/page';
 import './home.css';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       {/* <DemoVideos /> */}
       <Equipment />
+      <GalleryPage />
       <Team />
       <Support />
       <Contact />

@@ -60,6 +60,22 @@ export const contactInfo = {
   location: 'Piplod - Devgadh Baria, Dahod'
 };
 
+export const galleryImages = [
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791195813/SaveClip.App_684757559_17870502183655521_3677341621419839777_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196030/SaveClip.App_691234004_17870199681655521_4694172635844601085_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196028/SaveClip.App_673141694_18064136681690675_5007639593453852908_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196027/SaveClip.App_686100603_17907712308404026_1244862677320502219_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196026/SaveClip.App_683606319_17906268306404026_4233431456352040299_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196026/SaveClip.App_687570005_17870199690655521_8927604547988906608_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196025/SaveClip.App_674436089_18064136729690675_6630271071880744013_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196023/SaveClip.App_681233558_17868083094655521_3750619150064502134_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196023/SaveClip.App_687339251_17907712326404026_1462515821838687965_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196022/SaveClip.App_673117007_17868083103655521_8027920634714825964_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196021/SaveClip.App_683645157_17868083112655521_3211783222275623318_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196021/SaveClip.App_673878790_17867669328655521_1002527444675830164_n.jpg',
+  'https://res.cloudinary.com/yfuevo3k/image/upload/v1791196020/SaveClip.App_673879373_17868083130655521_6995606227269505863_n.jpg',
+];
+
 export const socialLinks = {
   instagram: 'https://www.instagram.com/jaguar_sound_official/',
   youtube: 'https://www.youtube.com/@patelankit-me',

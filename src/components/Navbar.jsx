@@ -8,7 +8,7 @@ export default function Navbar() {
     { href: '#hero', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#services', label: 'Services' },
-    { href: '#demo', label: 'Demo' },
+    { href: '#gallery', label: 'Gallery' },
     { href: '#team', label: 'Team' },
     { href: '#support', label: 'Support' },
     { href: '#contact', label: 'Contact' },
