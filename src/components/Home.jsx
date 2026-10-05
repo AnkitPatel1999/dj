@@ -3,7 +3,6 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import About from './About';
 import Services from './Services';
-import DemoVideos from './DemoVideos';
 import Equipment from './Equipment';
 import Team from './Team';
 import Support from './Support';
