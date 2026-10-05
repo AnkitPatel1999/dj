@@ -5,8 +5,8 @@ export default function DemoVideos() {
   return (
     <section id="demo" className="py-5 px-4 bg-secondary">
       <div className="container">
-        <h2 className="display-4 fw-bold mb-5 text-center text-danger">ડેમો વીડિયો</h2>
-        <p className="text-center text-light mb-5">આપણું તાજેતરનું DJ પરફોર્મન્સ અને ઈવેન્ટ હાઇલાઇટ્સ જુઓ</p>
+        <h2 className="display-4 fw-bold mb-5 text-center text-danger">Demo Videos</h2>
+        <p className="text-center text-light mb-5">Watch our recent DJ performances and event highlights</p>
         <div className="row g-4">
           {demoVideos.map((video, i) => (
             <div key={i} className="col-md-6">

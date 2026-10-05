@@ -3,67 +3,66 @@ import dilipbhaiImg from '../assets/imgs/dilipbhai.jpeg';
 import raCabinetImg from '../assets/imgs/ra_cabinet.jpg';
 
 export const heroSlides = [
-  { video: 'https://www.youtube.com/embed/dQw4w9WgXcQ', title: 'લગ્નના DJ મેજિક' },
-  { video: 'https://www.youtube.com/embed/9bZkp7q19f0', title: 'ડાંડિયાની એનર્જી' },
-  { video: 'https://www.youtube.com/embed/kJQP7kiw9Fk', title: 'વરઘોડોના વાઇબ્સ' },
+  { video: 'https://www.youtube.com/embed/dQw4w9WgXcQ', title: 'Wedding DJ Magic' },
+  { video: 'https://www.youtube.com/embed/9bZkp7q19f0', title: 'Dandiya Energy' },
+  { video: 'https://www.youtube.com/embed/kJQP7kiw9Fk', title: 'Baraat Vibes' },
 ];
 
 export const services = [
-  { icon: '🎧', title: 'લગ્નનો DJ', desc: 'લગ્ન માટે સંપૂર્ણ DJ સેટআપ અને પ્રોફેશનલ સાઉન્ડ' },
-  { icon: '💃', title: 'ગરબા / ડાંડિયા', desc: 'ગરબા અને ડાંડિયા રાસ માટે ઉચ્ચ ઉર્જાવાળો મ્યુઝિક' },
-  { icon: '🚩', title: 'વરઘોડો / બારાત', desc: 'વરઘોડો અને બારાત સમારોહ માટે ડાયનેમિક DJ સેટઆપ' },
-  { icon: '🎉', title: 'જન્મદિવસ DJ', desc: 'જન્મદિવસ સમારોહ માટે મજેદાર અને ઉર્જાવાળી DJ સેવા' },
-  { icon: '🥂', title: 'રિસેપશન DJ', desc: 'રિસેપશન અને ગ્રાન્ડ એન્ટ્રી માટે પ્રોફેશનલ DJ' },
-  { icon: '🔥', title: 'વિશેષ ઈવેન્ટ', desc: 'કોઈપણ ઈવેન્ટ માટે સાઉન્ડ સિસ્ટમ ભાડા' },
+  { icon: '🎧', title: 'Wedding DJ', desc: 'Complete DJ setup and professional sound for weddings' },
+  { icon: '💃', title: 'Garba / Dandiya', desc: 'High-energy music for Garba and Dandiya Raas' },
+  { icon: '🚩', title: 'Varghodo / Baraat', desc: 'Dynamic DJ setup for Varghodo and Baraat celebrations' },
+  { icon: '🎉', title: 'Birthday DJ', desc: 'Fun and energetic DJ service for birthday parties' },
+  { icon: '🥂', title: 'Reception DJ', desc: 'Professional DJ for receptions and grand entries' },
+  { icon: '🔥', title: 'Special Events', desc: 'Sound system rental for any event' },
 ];
 
 export const demoVideos = [
-  { title: 'લગ્નનું હાઇલાઇટ', link: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
-  { title: 'ડાંડિયા રાસની એનર્જી', link: 'https://www.youtube.com/embed/9bZkp7q19f0' },
-  { title: 'વરઘોડો સેટાપ', link: 'https://www.youtube.com/embed/kJQP7kiw9Fk' },
-  { title: 'જન્મદિવસનો પર્ટી', link: 'https://www.youtube.com/embed/jNQXAC9IVRw' },
+  { title: 'Wedding Highlights', link: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
+  { title: 'Dandiya Raas Energy', link: 'https://www.youtube.com/embed/9bZkp7q19f0' },
+  { title: 'Varghodo Setup', link: 'https://www.youtube.com/embed/kJQP7kiw9Fk' },
+  { title: 'Birthday Party', link: 'https://www.youtube.com/embed/jNQXAC9IVRw' },
 ];
 
 export const team = [
   { 
-    name: 'મેસ્ટરમાઇન્ડ પ્રવીણ', 
-    role: 'લીડ DJ અને સ્થાપક',
+    name: 'Ankit (Dreamchaser)', 
+    role: 'Lead DJ & Founder',
     phone: '9712448793',
-    specialty: '15+ વર્ષનો અનુભવ',
+    specialty: 'Event Coordination',
+    icon: '📋'
+  },
+  { 
+    name: 'Hemu Jaguar Sound', 
+    role: 'Operations Manager',
+    phone: '9712448793',
+    specialty: '15+ Years Experience',
     icon: '🎤'
   },
   { 
-    name: 'કુલદીપ', 
-    role: 'સાઉન્ડ માસ્ટર',
+    name: 'Kuldip', 
+    role: 'Sound Master',
     phone: '9712448793',
-    specialty: 'ઓડિયો એન્જિનીયરિંગ એક્સપર્ટ',
+    specialty: 'Audio Engineering Expert',
     icon: '🔊'
-  },
-  { 
-    name: 'અંકિત (ડ્રીમચેસર)', 
-    role: 'ઓપરેશન્સ મેનેજર',
-    phone: '9712448793',
-    specialty: 'ઈવેન્ટ કોઓર્ડિનેશન',
-    icon: '📋'
-  },
+  }
 ];
 
 export const supports = [
-  { name: 'તોડફોડ DJ', desc: 'મોટી ઈવેન્ટ માટે સહયોગ', icon: pakabhaiImg },
-  { name: 'દિલીપ વસાવા', desc: 'મ્યુઝિક પ્રોડક્શન અને ગોઠવણી', icon: dilipbhaiImg },
-  { name: 'RA કેબિનેટ', desc: 'એડવાન્સ ઓડિયો મિક્સિંગ અને માસ્ટરિંગ', icon: raCabinetImg },
+  { name: 'Todfod DJ', desc: 'Collaboration for large events', icon: pakabhaiImg },
+  { name: 'Dilip Vasava', desc: 'Music production and arrangement', icon: dilipbhaiImg },
+  { name: 'RA Cabinet', desc: 'Advanced audio mixing and mastering', icon: raCabinetImg },
 ];
 
 export const contactInfo = {
   phone: '9712448793',
   whatsapp: '919712448793',
-  location: 'પીપલોદ - દેવગઢ બારિયા, દાહોદ'
+  location: 'Piplod - Devgadh Baria, Dahod'
 };
 
 export const socialLinks = {
   instagram: 'https://www.instagram.com/jaguar_sound_official/',
-  youtube: 'https://www.youtube.com/@jaguar_sounds_official',
+  youtube: 'https://www.youtube.com/@patelankit-me',
   instagramDreamchaser: 'https://www.instagram.com/dreamchaser.ride/',
   instagramMastermind: 'https://www.instagram.com/mastermind_pravin_patel/'
 };
-

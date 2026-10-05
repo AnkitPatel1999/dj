@@ -6,8 +6,8 @@ export default function Support() {
   return (
     <section id="support" className="py-5 px-4 bg-dark">
       <div className="container">
-        <h2 className="display-4 fw-bold mb-3 text-center text-danger">આપણે સમર્થન અને સહયોગ કરીએ છીએ</h2>
-        <p className="display-6 text-center text-light mb-5">સંગીત અને એન્ટરટેઇનમેન્ટ ઈન્ડસ્ટ્રીમાં ગર્વિત સાથીદાર</p>
+        <h2 className="display-4 fw-bold mb-3 text-center text-danger">We Support & Collaborate</h2>
+        <p className="display-6 text-center text-light mb-5">Proud partners in the music and entertainment industry</p>
         <div className="row g-4">
           {supports.map((support, i) => (
             <div key={i} className="col-md-4">

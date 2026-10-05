@@ -4,42 +4,42 @@ export default function About() {
   return (
     <section id="about" className="py-5 px-4 bg-secondary">
       <div className="container">
-        <h2 className="display-4 fw-bold mb-5 text-center text-danger">જેગ સાઉન્ડ્સ વિશે</h2>
+        <h2 className="display-4 fw-bold mb-5 text-center text-danger">About Jaguar Sounds</h2>
         <div className="row g-4">
           <div className="col-md-6">
             <div className="bg-dark p-4 rounded">
-              <h3 className="h2 fw-bold mb-3">🎤 આપણી કહાણી</h3>
+              <h3 className="h2 fw-bold mb-3">🎤 Our Story</h3>
               <p className="text-light mb-3">
-                મ્યુઝિક અને ઈવેન્ટ એન્ટરટેઇનમેન્ટના શોખ સાથે શરૂ થયેલું, જેગવાર સાઉન્ડ્સ ડાહોદ અને આસપાસના વિસ્તારમાં સૌથી વિશ્વસ્ત DJ સેવાઓમાંથી એક બની ગયું છે।
+                Started with a passion for music and event entertainment, Jaguar Sounds has become one of the most trusted DJ services in Dahod and surrounding areas.
               </p>
               <p className="text-light">
-                15 વર્ષથી વધુનાં અનુભવ અને અત્યાધુનિક સાધન સાથે, આપણે લગ્ન, ઉદયાપન અને કોર્પોરેટ ઈવેન્ટો માટે અવિસ્મરણીય પરફોર્મન્સ આપીએ છીએ।
+                With over 15 years of experience and state-of-the-art equipment, we deliver unforgettable performances for weddings, celebrations, and corporate events.
               </p>
             </div>
           </div>
           <div className="col-md-6">
             <div className="bg-dark p-4 rounded">
-              <h3 className="h2 fw-bold mb-3">⭐ આપણને કેમ પસંદ કરો?</h3>
+              <h3 className="h2 fw-bold mb-3">⭐ Why Choose Us?</h3>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start gap-3 mb-3">
                   <span className="text-danger mt-1">✓</span>
-                  <span className="text-light">પ્રોફેશનલ સાઉન્ડ અને લાઇટિંગ સેટાપ</span>
+                  <span className="text-light">Professional sound and lighting setup</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-3">
                   <span className="text-danger mt-1">✓</span>
-                  <span className="text-light">અનુભવી અને તાલીમ પ્રાપ્ત ટીમ</span>
+                  <span className="text-light">Experienced and trained team</span>
                 </li>
                 {/* <li className="d-flex align-items-start gap-3 mb-3">
                   <span className="text-danger mt-1">✓</span>
-                  <span className="text-light">સસ્તી કિંમતવાળી પેકેજો</span>
+                  <span className="text-light">Affordable packages</span>
                 </li> */}
                 <li className="d-flex align-items-start gap-3 mb-3">
                   <span className="text-danger mt-1">✓</span>
-                  <span className="text-light">સમયસર અને વિશ્વસ્ત સેવા</span>
+                  <span className="text-light">On-time and reliable service</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-3">
                   <span className="text-danger mt-1">✓</span>
-                  <span className="text-light">કસ્ટમાઇજ્ડ મ્યુઝિક સિલેક્શન</span>
+                  <span className="text-light">Customized music selection</span>
                 </li>
               </ul>
             </div>
@@ -49,4 +49,3 @@ export default function About() {
     </section>
   );
 }
-

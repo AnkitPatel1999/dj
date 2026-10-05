@@ -5,13 +5,13 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { href: '#hero', label: 'હોમ' },
-    { href: '#about', label: 'વિશે' },
-    { href: '#services', label: 'સેવાઓ' },
-    { href: '#demo', label: 'ડેમો' },
-    { href: '#team', label: 'ટીમ' },
-    { href: '#support', label: 'સમર્થન' },
-    { href: '#contact', label: 'સંપર્ક' },
+    { href: '#hero', label: 'Home' },
+    { href: '#about', label: 'About' },
+    { href: '#services', label: 'Services' },
+    { href: '#demo', label: 'Demo' },
+    { href: '#team', label: 'Team' },
+    { href: '#support', label: 'Support' },
+    { href: '#contact', label: 'Contact' },
   ];
 
   const handleLinkClick = () => {

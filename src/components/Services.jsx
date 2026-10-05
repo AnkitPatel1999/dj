@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <section id="services" className="py-5 px-4 bg-dark">
       <div className="container">
-        <h2 className="display-4 fw-bold mb-5 text-center text-danger">આપણી સેવાઓ</h2>
+        <h2 className="display-4 fw-bold mb-5 text-center text-danger">Our Services</h2>
         <div className="row g-4">
           {services.map((service, i) => (
             <div key={i} className="col-md-4">
