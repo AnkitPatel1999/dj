@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-
+import { NavLink } from 'react-router-dom';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -21,8 +21,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-90 sticky-top shadow-lg" style={{ zIndex: 1050 }}>
       <div className="container-fluid">
-        <div className="navbar-brand fs-3 fw-bold text-danger">🎵 JAGUAR SOUNDS</div>
-        
+        <NavLink to="/" className="navbar-brand fs-3 fw-bold text-danger">🎵 JAGUAR SOUNDS</NavLink>
         {/* Mobile Menu Button */}
         <button 
           className="navbar-toggler d-lg-none" 
