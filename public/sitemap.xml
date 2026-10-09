@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://jaguarsound.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://jaguarsound.vercel.app/about</loc>
+  </url>
+
+  <url>
+    <loc>https://jaguarsound.vercel.app/services</loc>
+  </url>
+
+  <url>
+    <loc>https://jaguarsound.vercel.app/gallery</loc>
+  </url>
+
+  <url>
+    <loc>https://jaguarsound.vercel.app/team</loc>
+  </url>
+
+  <url>
+    <loc>https://jaguarsound.vercel.app/support</loc>
+  </url>
+
+  <url>
+    <loc>https://jaguarsound.vercel.app/contact</loc>
+  </url>
+
+</urlset>
