@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const location = useLocation();
+
+  console.log("Current path:", location.pathname);
+
   const menuItems = [
-    { href: '#hero', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#services', label: 'Services' },
-    { href: '#gallery', label: 'Gallery' },
-    { href: '#team', label: 'Team' },
-    { href: '#support', label: 'Support' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#hero', navlink: '/', label: 'Home' },
+    { href: '#about', navlink: '/about', label: 'About' },
+    { href: '#services', navlink: '/services', label: 'Services' },
+    { href: '#gallery', navlink: '/gallery', label: 'Gallery' },
+    { href: '#team', navlink: '/team', label: 'Team' },
+    { href: '#support', navlink: '/support', label: 'Support' },
+    { href: '#contact', navlink: '/contact', label: 'Contact' },
   ];
 
   const handleLinkClick = () => {
@@ -35,11 +41,24 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto gap-3">
-            {menuItems.map((item, index) => (
-              <li key={index} className="nav-item">
-                <a href={item.href} className="nav-link text-white">{item.label}</a>
-              </li>
-            ))}
+            {location.pathname !== "/" && (
+               <>
+               {menuItems.map((item, index) => (
+                 <li key={index} className="nav-item">
+                   <NavLink to={item.navlink} className="nav-link text-white">{item.label}</NavLink>
+                 </li>
+               ))}
+             </>
+            )}
+            {location.pathname === "/" && (
+              <>
+                {menuItems.map((item, index) => (
+                  <li key={index} className="nav-item">
+                    <a href={item.href} className="nav-link text-white">{item.label}</a>
+                  </li>
+                ))}
+              </>
+            )}
           </ul>
         </div>
       </div>
@@ -48,11 +67,24 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="d-lg-none bg-dark p-3">
           <ul className="navbar-nav">
-            {menuItems.map((item, index) => (
-              <li key={index} className="nav-item">
-                <a href={item.href} className="nav-link text-white" onClick={handleLinkClick}>{item.label}</a>
-              </li>
-            ))}
+            {location.pathname !== "/" && (
+              <>
+                {menuItems.map((item, index) => (
+                  <li key={index} className="nav-item">
+                    <NavLink to={item.navlink} className="nav-link text-white">{item.label}</NavLink>
+                  </li>
+                ))}
+              </>
+            )}
+            {location.pathname === "/" && (
+              <>
+                {menuItems.map((item, index) => (
+                  <li key={index} className="nav-item">
+                    <a href={item.href} className="nav-link text-white">{item.label}</a>
+                  </li>
+                ))}
+              </>
+            )}
           </ul>
         </div>
       )}
