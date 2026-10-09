@@ -80,7 +80,7 @@ export default function Navbar() {
               <>
                 {menuItems.map((item, index) => (
                   <li key={index} className="nav-item">
-                    <a href={item.href} className="nav-link text-white">{item.label}</a>
+                    <a href={item.href} className="nav-link text-white" onClick={handleLinkClick}>{item.label}</a>
                   </li>
                 ))}
               </>
