@@ -1,0 +1,879 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .dj-page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  
+    background:
+      radial-gradient(
+        circle at 50% 0%,
+        rgba(255, 190, 0, 0.15),
+        transparent 35%
+      ),
+      radial-gradient(
+        circle at 0% 40%,
+        rgba(255, 0, 80, 0.08),
+        transparent 25%
+      ),
+      #050505;
+  
+    color: #fff;
+  
+    font-family:
+      Inter,
+      Arial,
+      Helvetica,
+      sans-serif;
+  }
+  
+  /* =========================
+     BACKGROUND
+  ========================= */
+  
+  .dj-grid {
+    position: fixed;
+    inset: 0;
+  
+    background-image:
+      linear-gradient(
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px
+      );
+  
+    background-size: 50px 50px;
+  
+    transform: perspective(500px) rotateX(55deg) scale(2);
+  
+    transform-origin: bottom;
+  
+    pointer-events: none;
+  
+    opacity: 0.35;
+  }
+  
+  .dj-glow {
+    position: fixed;
+  
+    width: 350px;
+    height: 350px;
+  
+    border-radius: 50%;
+  
+    filter: blur(100px);
+  
+    opacity: 0.18;
+  
+    pointer-events: none;
+  }
+  
+  .glow-one {
+    top: 10%;
+    left: -200px;
+  
+    background: #ffc400;
+  }
+  
+  .glow-two {
+    top: 35%;
+    right: -220px;
+  
+    background: #ff0055;
+  }
+  
+  /* =========================
+     EQUALIZER
+  ========================= */
+  
+  .equalizer {
+    position: fixed;
+  
+    bottom: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 80px;
+  
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  
+    gap: 4px;
+  
+    opacity: 0.08;
+  
+    pointer-events: none;
+  }
+  
+  .equalizer span {
+    width: 5px;
+  
+    height: 30px;
+  
+    background: #ffc400;
+  
+    animation: equalizer 0.8s infinite ease-in-out alternate;
+  }
+  
+  .equalizer span:nth-child(3n) {
+    height: 60px;
+  }
+  
+  .equalizer span:nth-child(4n) {
+    height: 40px;
+  }
+  
+  @keyframes equalizer {
+    from {
+      transform: scaleY(0.3);
+    }
+  
+    to {
+      transform: scaleY(1);
+    }
+  }
+  
+  /* =========================
+     CONTAINER
+  ========================= */
+  
+  .dj-container {
+    position: relative;
+    z-index: 2;
+  
+    width: 100%;
+    max-width: 650px;
+  
+    margin: auto;
+  
+    padding: 35px 16px 30px;
+  }
+  
+  /* =========================
+     HERO
+  ========================= */
+  
+  .dj-hero {
+    text-align: center;
+  }
+  
+  .dj-badge {
+    display: inline-block;
+  
+    padding: 7px 14px;
+  
+    border: 1px solid rgba(255, 196, 0, 0.3);
+  
+    border-radius: 50px;
+  
+    background: rgba(255, 196, 0, 0.06);
+  
+    color: #ffc400;
+  
+    font-size: 10px;
+  
+    font-weight: 800;
+  
+    letter-spacing: 2px;
+  }
+  
+  .jaguar-logo {
+    width: 100px;
+    height: 100px;
+  
+    margin: 22px auto 12px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+  
+    background:
+      radial-gradient(
+        circle,
+        #ffcf32,
+        #ff9800 70%
+      );
+  
+    box-shadow:
+      0 0 30px rgba(255, 196, 0, 0.25),
+      inset 0 0 25px rgba(255, 255, 255, 0.2);
+  
+    border: 3px solid #ffc400;
+  }
+  
+  .jaguar-logo span {
+    font-size: 50px;
+  
+    filter: grayscale(1) brightness(0.1);
+  }
+  
+  .live-status {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  
+    gap: 6px;
+  
+    margin: 12px 0;
+  
+    color: #888;
+  
+    font-size: 9px;
+  
+    font-weight: 700;
+  
+    letter-spacing: 2px;
+  }
+  
+  .live-status span {
+    width: 6px;
+    height: 6px;
+  
+    border-radius: 50%;
+  
+    background: #ff1744;
+  
+    box-shadow: 0 0 10px #ff1744;
+  
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.3;
+    }
+  }
+  
+  .dj-hero h1 {
+    margin: 0;
+  
+    font-size: clamp(48px, 13vw, 78px);
+  
+    line-height: 0.82;
+  
+    font-weight: 950;
+  
+    letter-spacing: -4px;
+  }
+  
+  .dj-hero h1 strong {
+    display: block;
+  
+    color: #ffc400;
+  
+    text-shadow:
+      0 0 25px rgba(255, 196, 0, 0.15);
+  }
+  
+  .dj-hero h2 {
+    margin: 10px 0;
+  
+    font-size: 17px;
+  
+    letter-spacing: 9px;
+  
+    color: #888;
+  }
+  
+  .experience {
+    margin: 18px 0 5px;
+  
+    font-size: 16px;
+  
+    font-weight: 900;
+  
+    letter-spacing: 3px;
+  }
+  
+  .experience span {
+    color: #ffc400;
+  }
+  
+  .hero-description {
+    color: #777;
+  
+    font-size: 12px;
+  
+    line-height: 1.7;
+  }
+  
+  /* =========================
+     STATS
+  ========================= */
+  
+  .dj-stats {
+    display: grid;
+  
+    grid-template-columns: repeat(3, 1fr);
+  
+    gap: 8px;
+  
+    margin-top: 25px;
+  }
+  
+  .dj-stats div {
+    padding: 14px 5px;
+  
+    border: 1px solid #222;
+  
+    background: rgba(255, 255, 255, 0.025);
+  
+    border-radius: 10px;
+  }
+  
+  .dj-stats strong {
+    display: block;
+  
+    color: #ffc400;
+  
+    font-size: 20px;
+  }
+  
+  .dj-stats span {
+    display: block;
+  
+    margin-top: 3px;
+  
+    color: #666;
+  
+    font-size: 8px;
+  
+    letter-spacing: 1px;
+  }
+  
+  /* =========================
+     VISUALIZER
+  ========================= */
+  
+  .sound-visualizer {
+    position: relative;
+  
+    margin: 30px 0;
+  
+    padding: 16px;
+  
+    border: 1px solid #242424;
+  
+    border-radius: 15px;
+  
+    background: #0b0b0b;
+  
+    overflow: hidden;
+  }
+  
+  .visualizer-label {
+    display: flex;
+  
+    justify-content: space-between;
+  
+    margin-bottom: 14px;
+  }
+  
+  .visualizer-label span {
+    color: #ffc400;
+  
+    font-size: 9px;
+  
+    font-weight: 800;
+  
+    letter-spacing: 2px;
+  }
+  
+  .visualizer-label small {
+    color: #555;
+  
+    font-size: 8px;
+  }
+  
+  .wave {
+    height: 38px;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    gap: 2px;
+  }
+  
+  .wave i {
+    display: block;
+  
+    width: 3px;
+  
+    height: 12px;
+  
+    border-radius: 10px;
+  
+    background: #ffc400;
+  
+    animation: wave 0.8s infinite ease-in-out alternate;
+  }
+  
+  .wave i:nth-child(3n) {
+    height: 28px;
+  }
+  
+  .wave i:nth-child(5n) {
+    height: 18px;
+  }
+  
+  @keyframes wave {
+    from {
+      transform: scaleY(0.35);
+    }
+  
+    to {
+      transform: scaleY(1);
+    }
+  }
+  
+  .music-controls {
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    gap: 25px;
+  
+    margin-top: 10px;
+  
+    color: #555;
+  }
+  
+  .music-controls b {
+    width: 34px;
+    height: 34px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+  
+    color: #050505;
+  
+    background: #ffc400;
+  }
+  
+  /* =========================
+     SECTION TITLE
+  ========================= */
+  
+  .section-title {
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 12px;
+  
+    margin: 30px 0 15px;
+  }
+  
+  .section-title span {
+    flex: 1;
+  
+    height: 1px;
+  
+    background: #252525;
+  }
+  
+  .section-title h3 {
+    margin: 0;
+  
+    color: #666;
+  
+    font-size: 9px;
+  
+    letter-spacing: 2px;
+  
+    white-space: nowrap;
+  }
+  
+  /* =========================
+     LINKS
+  ========================= */
+  
+  .links-list {
+    display: flex;
+  
+    flex-direction: column;
+  
+    gap: 10px;
+  }
+  
+  .dj-link {
+    display: flex;
+  
+    align-items: center;
+  
+    min-height: 74px;
+  
+    padding: 10px;
+  
+    color: white;
+  
+    text-decoration: none;
+  
+    border: 1px solid #222;
+  
+    border-radius: 14px;
+  
+    background:
+      linear-gradient(
+        110deg,
+        #101010,
+        #0b0b0b
+      );
+  
+    transition:
+      0.25s ease;
+  }
+  
+  .dj-link:hover {
+    transform: translateX(5px);
+  
+    border-color: #ffc400;
+  
+    box-shadow:
+      0 0 25px rgba(255, 196, 0, 0.08);
+  }
+  
+  .link-number {
+    width: 30px;
+  
+    color: #333;
+  
+    text-align: center;
+  
+    font-size: 9px;
+  
+    font-weight: 800;
+  }
+  
+  .link-icon {
+    width: 46px;
+    height: 46px;
+  
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+  
+    flex-shrink: 0;
+  
+    border-radius: 12px;
+  
+    background: #191919;
+  
+    color: #ffc400;
+  
+    font-size: 20px;
+  
+    font-weight: 900;
+  }
+  
+  .link-info {
+    flex: 1;
+  
+    margin-left: 13px;
+  }
+  
+  .link-info h4 {
+    margin: 0;
+  
+    font-size: 14px;
+  
+    font-weight: 800;
+  }
+  
+  .link-info p {
+    margin: 4px 0 0;
+  
+    color: #666;
+  
+    font-size: 10px;
+  }
+  
+  .link-arrow {
+    padding: 0 10px;
+  
+    color: #ffc400;
+  
+    font-size: 20px;
+  
+    transition: 0.2s;
+  }
+  
+  .dj-link:hover .link-arrow {
+    transform: translate(3px, -3px);
+  }
+  
+  /* =========================
+     SERVICES
+  ========================= */
+  
+  .service-grid {
+    display: grid;
+  
+    grid-template-columns: repeat(3, 1fr);
+  
+    gap: 8px;
+  }
+  
+  .service-card {
+    padding: 18px 5px;
+  
+    text-align: center;
+  
+    border: 1px solid #1f1f1f;
+  
+    border-radius: 12px;
+  
+    background: #0d0d0d;
+  }
+  
+  .service-card span {
+    display: block;
+  
+    margin-bottom: 7px;
+  
+    font-size: 20px;
+  }
+  
+  .service-card strong {
+    color: #aaa;
+  
+    font-size: 9px;
+  
+    letter-spacing: 1px;
+  }
+  
+  /* =========================
+     BOOKING
+  ========================= */
+  
+  .booking {
+    position: relative;
+  
+    margin-top: 30px;
+  
+    padding: 35px 20px;
+  
+    text-align: center;
+  
+    overflow: hidden;
+  
+    border: 1px solid #3a3000;
+  
+    border-radius: 20px;
+  
+    background:
+      radial-gradient(
+        circle at 50% 0,
+        rgba(255, 196, 0, 0.14),
+        transparent 65%
+      ),
+      #0d0d0d;
+  }
+  
+  .booking-light {
+    position: absolute;
+  
+    top: -100px;
+    left: 50%;
+  
+    width: 180px;
+    height: 180px;
+  
+    transform: translateX(-50%);
+  
+    background: #ffc400;
+  
+    filter: blur(100px);
+  
+    opacity: 0.12;
+  }
+  
+  .booking-small {
+    position: relative;
+  
+    color: #ffc400;
+  
+    font-size: 9px;
+  
+    font-weight: 800;
+  
+    letter-spacing: 3px;
+  }
+  
+  .booking h2 {
+    position: relative;
+  
+    margin: 12px 0 7px;
+  
+    font-size: 27px;
+  }
+  
+  .booking h2 span {
+    color: #ffc400;
+  }
+  
+  .booking p {
+    position: relative;
+  
+    margin: 0 0 20px;
+  
+    color: #666;
+  
+    font-size: 11px;
+  }
+  
+  .book-button {
+    position: relative;
+  
+    display: inline-flex;
+  
+    align-items: center;
+  
+    gap: 12px;
+  
+    padding: 14px 22px;
+  
+    color: #050505;
+  
+    text-decoration: none;
+  
+    border-radius: 9px;
+  
+    background: #ffc400;
+  
+    font-size: 11px;
+  
+    font-weight: 900;
+  
+    letter-spacing: 1px;
+  
+    box-shadow:
+      0 8px 30px rgba(255, 196, 0, 0.15);
+  
+    transition: 0.2s;
+  }
+  
+  .book-button:hover {
+    transform: translateY(-3px);
+  
+    background: #ffd633;
+  
+    box-shadow:
+      0 12px 40px rgba(255, 196, 0, 0.25);
+  }
+  
+  .book-button b {
+    font-size: 16px;
+  }
+  
+  /* =========================
+     FOOTER
+  ========================= */
+  
+  footer {
+    padding: 35px 0 10px;
+  
+    text-align: center;
+  }
+  
+  .footer-logo {
+    color: #ffc400;
+  
+    font-size: 13px;
+  
+    font-weight: 900;
+  
+    letter-spacing: 2px;
+  }
+  
+  footer p {
+    margin: 7px 0 15px;
+  
+    color: #444;
+  
+    font-size: 8px;
+  
+    letter-spacing: 2px;
+  }
+  
+  footer small {
+    color: #333;
+  
+    font-size: 8px;
+  }
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 480px) {
+  
+    .dj-container {
+      padding: 25px 12px;
+    }
+  
+    .dj-badge {
+      font-size: 8px;
+    }
+  
+    .jaguar-logo {
+      width: 85px;
+      height: 85px;
+    }
+  
+    .jaguar-logo span {
+      font-size: 42px;
+    }
+  
+    .dj-hero h1 {
+      font-size: 55px;
+    }
+  
+    .dj-hero h2 {
+      font-size: 13px;
+      letter-spacing: 7px;
+    }
+  
+    .experience {
+      font-size: 13px;
+    }
+  
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .link-number {
+      display: none;
+    }
+  
+    .link-info h4 {
+      font-size: 13px;
+    }
+  
+    .link-info p {
+      font-size: 9px;
+    }
+  }

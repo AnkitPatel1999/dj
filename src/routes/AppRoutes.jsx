@@ -9,6 +9,7 @@ import Contact from "../components/Contact";
 import Gallery from "../components/gallery/page";
 import Team from "../components/Team";
 import Support from "../components/Support";
+import Links from "../components/Links";
 
 export default function AppRoutes() {
   return (
@@ -22,6 +23,7 @@ export default function AppRoutes() {
         <Route path="/team" element={<Team />} />
         <Route path="/support" element={<Support />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/links" element={<Links />} />
       </Route>
     </Routes>
   );
