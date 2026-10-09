@@ -1,5 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
+import { HelmetProvider } from "react-helmet-async";
+
 
 // import Home from "./components/Home";
 import './App.css';
@@ -14,9 +16,11 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 

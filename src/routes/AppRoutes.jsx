@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import HeaderFooter from "../layouts/HeaderFooter";
+import RouteSEO from "../components/RouteSEO";
 
 import Home from "../components/Home";
 import About from "../components/About";
@@ -13,6 +14,8 @@ import Links from "../components/Links";
 
 export default function AppRoutes() {
   return (
+    <>
+    <RouteSEO />      
     <Routes>
       <Route path="/" element={<Home />} />
 
@@ -26,5 +29,6 @@ export default function AppRoutes() {
         <Route path="/links" element={<Links />} />
       </Route>
     </Routes>
+    </>
   );
 }
