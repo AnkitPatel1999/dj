@@ -1,7 +1,7 @@
 /* Links page: hides the site navbar/footer on this page only */
-body:has(.lk-page) .nav,
+/* body:has(.lk-page) .nav,
 body:has(.lk-page) .footer,
-body:has(.lk-page) .fab{display:none}
+body:has(.lk-page) .fab{display:none} */
 
 .lk-page{--red:#ff1f3d;--ink:#07070b;position:relative;min-height:100svh;overflow:hidden;background:var(--ink);isolation:isolate}
 .lk-page *{box-sizing:border-box}
