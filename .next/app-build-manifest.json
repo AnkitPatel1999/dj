@@ -1,0 +1,85 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/app/_not-found/page-b594cd94f1ea2cd6.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/css/dca45814b09a5337.css",
+      "static/chunks/app/layout-a851a66c7a802f49.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/986-bb716a96f04d5cc7.js",
+      "static/chunks/665-6642b4cecb662aef.js",
+      "static/chunks/app/page-d428bde5cc753cb4.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/app/about/page-68c4a90cc0cb9c02.js"
+    ],
+    "/reviews/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/app/reviews/page-259b84600002ce8d.js"
+    ],
+    "/partners/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/app/partners/page-a8683695943651b3.js"
+    ],
+    "/book-most-powerful-sound-of-gujarat/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/app/book-most-powerful-sound-of-gujarat/page-b2f90b1d11432a0d.js"
+    ],
+    "/gallery/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/665-6642b4cecb662aef.js",
+      "static/chunks/app/gallery/page-8f1be56e0b03c30e.js"
+    ],
+    "/team/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/app/team/page-92839e2dc79775b8.js"
+    ],
+    "/services/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/app/services/page-c390bfbaf87ebe33.js"
+    ],
+    "/setup/page": [
+      "static/chunks/webpack-013cdd0cd110f3a5.js",
+      "static/chunks/fd9d1056-d1cbe45dbb83a69a.js",
+      "static/chunks/117-278f9a51d6e5ad47.js",
+      "static/chunks/main-app-95db3a655f390213.js",
+      "static/chunks/app/setup/page-454d019bc063b6d5.js"
+    ]
+  }
+}
