@@ -28,6 +28,7 @@ export default function Footer() {
             <a href={INSTAGRAM} target="_blank" rel="noreferrer"><Instagram size={14} /> Jaguar Sound Official Instagram</a>
             <a href={YOUTUBE} target="_blank" rel="noreferrer"><Youtube size={14} /> Jaguar Sound Official Youtube Channel</a>
             <a href={FACEBOOK} target="_blank" rel="noreferrer"><Facebook size={14} /> Jaguar Sound Official Facebook Page</a>
+            <a href="/links" ><MessageCircle size={14} /> Jaguar Sound Official Links</a>
           </div>
         </div>
         <div className="copy"><span>© {new Date().getFullYear()} Jaguar Sound. All Rights Reserved.</span><span>Designed with <i>♥</i> for Music &amp; Events</span></div>

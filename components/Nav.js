@@ -2,9 +2,13 @@
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { nav, WA } from "@/lib/data";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  
   return (
     <header className="nav">
       <a href="/" className="brand" aria-label="Jaguar Sound home">
