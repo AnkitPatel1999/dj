@@ -2,7 +2,10 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, X } from "lucide-react";
 import { gallery } from "@/lib/data";
+import Crumbs from "@/components/Crumbs";
+import { pageMeta } from "@/lib/seo";
 
+// export const metadata = pageMeta("gallery");
 
 const tabs = ["All", "Wedding", "Garba", "Timli", "Setup"];
 
@@ -24,6 +27,7 @@ export default function Gallery() {
 
   return (
     <>
+      <Crumbs page="gallery" />
       <div className="gal-head">
         <h2><span className="eyebrow">Our Gallery</span>Event <em>Moments</em></h2>
         <div className="tabs" role="tablist">

@@ -3,12 +3,17 @@ import { Instagram, Youtube } from "lucide-react";
 
 import { H } from "@/lib/functions"
 import Icon from "@/components/Icon";
+import Crumbs from "@/components/Crumbs";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata = pageMeta("team");
 
 
 export default function Team() {
     return (
       <>
         <section className="section" id="team">
+        <Crumbs page="team" />
           <H eyebrow="Our Team" a="Meet Our" b="Creative Team" sub="Passionate people who make every event special" />
           <div className="team-wrap">
             <div className="team">

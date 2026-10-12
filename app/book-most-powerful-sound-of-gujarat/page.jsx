@@ -1,12 +1,16 @@
 import { PHONE, TEL, WA } from "@/lib/data";
 import { Phone, MessageCircle, MapPin } from "lucide-react";
+import Crumbs from "@/components/Crumbs";
+import { pageMeta } from "@/lib/seo";
 
+export const metadata = pageMeta("contact");
 
 
 export default function Bookmostpowerfulsoundofgujarat() {
     return (
       <>
         <section className="section book" id="book">
+          <Crumbs page="contact" />
           <div className="book-box">
             <div>
               <span className="eyebrow light">Let&apos;s make your event special</span>

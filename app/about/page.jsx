@@ -1,10 +1,14 @@
-import { Phone, MessageCircle, MapPin, Play, Check, Star, ArrowRight, Volume2, Calendar, Users, Music, Instagram, Youtube, Facebook, Award } from "lucide-react";
+import { Check, ArrowRight, Volume2, Users, Music } from "lucide-react";
+import Crumbs from "@/components/Crumbs";
+import { pageMeta } from "@/lib/seo";
 
+export const metadata = pageMeta("about");
 
 export default function About() {
     return (
       <>
         <section className="section about" id="about">
+          <Crumbs page="about" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="about-img" src="/img/about.jpg" alt="Jaguar Sound mobile speaker stack" />
           <div>

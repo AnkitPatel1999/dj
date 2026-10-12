@@ -3,12 +3,16 @@ import { Check } from "lucide-react";
 import { H } from "@/lib/functions"
 import { setup } from "@/lib/data";
 import Icon from "@/components/Icon";
+import Crumbs from "@/components/Crumbs";
+import { pageMeta } from "@/lib/seo";
 
+export const metadata = pageMeta("setup");
 
 export default function Setup() {
     return (
       <>
         <section className="section setup-sec" id="setup">
+        <Crumbs page="setup" />
           <H eyebrow="Our Setup" a="Our Professional" b="Setup" sub="High bass, crystal clear sound and stunning lighting to make your event unforgettable" />
           <div className="setup-grid">
             {setup.map((s) => (

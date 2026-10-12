@@ -1,12 +1,16 @@
 import { H } from "@/lib/functions"
 import { services } from "@/lib/data";
 import Icon from "@/components/Icon";
+import Crumbs from "@/components/Crumbs";
+import { pageMeta } from "@/lib/seo";
 
+export const metadata = pageMeta("services");
 
 export default function Services() {
     return (
       <>
         <section className="section" id="services">
+          <Crumbs page="services" />
           <H eyebrow="Our Services" a="Events" b="We Cover" sub="Music for every moment, memories for a lifetime" />
           <div className="svc-grid">
             {services.map((s) => (

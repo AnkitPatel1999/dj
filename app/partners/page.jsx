@@ -5,6 +5,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { H } from "../../lib/functions"
 import { partners } from "@/lib/data";
 
+import Crumbs from "@/components/Crumbs";
+import { pageMeta } from "@/lib/seo";
+
+// export const metadata = pageMeta("partners");
+
 
 export default function Partners() {
   const ref = useRef(null);
@@ -13,6 +18,7 @@ export default function Partners() {
     return (
       <>
         <section className="section" id="partners">
+          <Crumbs page="partners" />
           <H eyebrow="Our Partners" a="We Support" b="& Collaborate" />
          
           <div className="carousel">
