@@ -8,7 +8,7 @@ export default function sitemap() {
       url: `${SITE_URL}${p.path}`,
       lastModified: now,
       changeFrequency: "monthly",
-      priority: p.path === "/services" || p.path === "/contact" ? 0.9 : 0.7,
+      priority: p.path === "/services" || p.path === "/book-most-powerful-sound-of-gujarat" ? 0.9 : 0.7,
     })),
   ];
 }
