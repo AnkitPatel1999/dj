@@ -63,8 +63,9 @@ const jsonLd = {
   knowsAbout: ["Wedding DJ", "Garba DJ", "Timli DJ", "Varghodo DJ", "Sound system rental", "Stage lighting"],
 };
 
-console.log("h")
+
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en" className={`${body.variable} ${brush.variable}`}>
       <body>

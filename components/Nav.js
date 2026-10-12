@@ -8,8 +8,9 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
-  
+
   return (
+    <>
     <header className="nav">
       <a href="/" className="brand" aria-label="Jaguar Sound home">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -20,7 +21,7 @@ export default function Nav() {
         {nav.map((link,i) => (
           <a
             key={link.href}
-            href={link.hash}
+            href={isHome? link.hash: link.href}
             title={link.title}
             className={i === 0 ? "active" : ""}
             onClick={() => setOpen(false)}
@@ -34,5 +35,7 @@ export default function Nav() {
         {open ? <X /> : <Menu />}
       </button>
     </header>
+    <div className={isHome ? "":"nav_children_gap"}></div>
+    </>
   );
 }

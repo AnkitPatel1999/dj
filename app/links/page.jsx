@@ -133,7 +133,7 @@ export default function LinksPage() {
           <span className="lk-book-small">Ready to make some noise?</span>
           <h2>BOOK <em>JAGUAR SOUND</em></h2>
           <p>Turn your event into an unforgettable experience.</p>
-          <Link href="/contact" className="lk-btn lk-btn-white">Book Now <ArrowUpRight size={18} /></Link>
+          <Link href="/book-most-powerful-sound-of-gujarat" className="lk-btn lk-btn-white">Book Now <ArrowUpRight size={18} /></Link>
         </section>
 
         <footer className="lk-foot">
