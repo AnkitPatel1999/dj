@@ -5,6 +5,8 @@ const body = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700", 
 const brush = Permanent_Marker({ subsets: ["latin"], weight: "400", variable: "--font-brush" });
 
 import { SITE, SITE_URL } from "@/lib/site";
+import Nav from "@/components/Nav";
+import Footer from "@/components/footer";
 
 
 
@@ -70,8 +72,11 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
         />
+
+        <Nav></Nav>
         {children}
-        
+        <Footer></Footer>
+
         </body>
     </html>
   );
