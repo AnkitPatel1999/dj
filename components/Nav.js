@@ -7,7 +7,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   return (
     <header className="nav">
-      <a href="#top" className="brand" aria-label="Jaguar Sound home">
+      <a href="/" className="brand" aria-label="Jaguar Sound home">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/img/logo.png" alt="Jaguar Sound" />
       </a>
